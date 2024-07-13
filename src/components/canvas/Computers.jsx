@@ -10,13 +10,13 @@ const Computers = () => {
     <mesh>
       <hemisphereLight intensity={3.15} groundColor="black" />
       <pointLight intensity={10} position={[-0,-1,2.5]}/>
-      <spotLight position={[-20,50,10]} angle={0.12} penumbra={1} intensity={10000000}
+      <spotLight position={[-30,50,10]} angle={0.15} penumbra={1} intensity={10000000}
       castShadow shadow-mapSize={1024} />
 
       
       <primitive object={computer.scene}
       scale={1}
-      rotation={[0, 0, 0]}
+      rotation={[0, 15, 0]}
       position={[1, -9, 0]} // Adjust these values to rotate the model
       />
     </mesh>
