@@ -11,8 +11,8 @@ const Hero = () => {
       <div className="container">
       <ComputersCanvas />
       <div className="overlay">
-        <h1>Hello, I'm Adrian</h1>
-        <p>I develop 3D visuals, user interfaces and web applications</p>
+        <h1>Hello, I'm Elliott</h1>
+        <p>I am an architect for sda and build pretty things</p>
       </div>
       </div>
       </div>
