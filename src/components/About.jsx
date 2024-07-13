@@ -47,11 +47,9 @@ const About = () => {
       variants={fadeIn("", "", 0.1, 1)}
       className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
     >
-      I'm a skilled software developer with experience in TypeScript and
-      JavaScript, and expertise in frameworks like React, Node.js, and
-      Three.js. I'm a quick learner and collaborate closely with clients to
-      create efficient, scalable, and user-friendly solutions that solve
-      real-world problems. Let's work together to bring your ideas to life!
+I am a friendly, reliable, and trustworthy individual who enjoys working in a team and on my own.
+
+I enjoy sport and presently rotate membership of four climbing gyms, depending on my location. In the past, I have played rugby and was on two teams repersenting my school and local rugby club where I played “lock” position. I have also enjoyed rowing, and during my first year at university represented Leeds Beckett in a team rowing competion. All of  these sports have helped me to develop team building skills; the ability to make quick-fire decisions; improved my communication skills; kept me fit and provided a social scene.
     </motion.p>
     <div className="mt-20 flex flex-wrap gap-10">
       {services.map((services,index) => (
