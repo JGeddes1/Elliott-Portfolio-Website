@@ -42,19 +42,27 @@ import {
   
   const services = [
     {
-      title: "Web Developer",
+      title: "Photoshop",
       icon: web,
     },
     {
-      title: "React Native Developer",
+      title: "Illustrator",
       icon: mobile,
     },
     {
-      title: "Backend Developer",
+      title: "AutoCad",
       icon: backend,
     },
     {
-      title: "Content Creator",
+      title: "Revit",
+      icon: creator,
+    },
+    {
+      title: "NBS Chorus",
+      icon: creator,
+    },
+    {
+      title: "Microsoft Suite",
       icon: creator,
     },
   ];
