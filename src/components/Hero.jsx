@@ -1,6 +1,6 @@
 import React from 'react'
 import {motion} from 'framer-motion';
-
+import '../style.css';
 import { styles } from '../styles';
 import {ComputersCanvas} from './canvas';
 
@@ -13,17 +13,32 @@ const Hero = () => {
           <div className='w-1 sm:h-80 h-40 violet-gradient' />
 
         </div>
+        <div className="container">
+        <div className='text-container'>
         <div>
           <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className='text-[#915eff]'>Eliott Young</span> </h1>
           <p className={`${styles.heroSubText} text-white-100 mt-2`}>I work on architecture projects <br className='sm:block hidden' /> and build pretty houses</p>
         </div>
+
+        </div>
+        <div className="canvas-container">
+          <ComputersCanvas/>
+        </div>
+        
       </div>
-      <ComputersCanvas/>
+      
+
+
+
+        </div>
+        
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            
+            <motion.dev>
+
+            </motion.dev>
           </div>
         </a>
       </div>
