@@ -25,7 +25,7 @@ const Computers = () => {
 
 const ComputersCanvas = () => {
   return (
-    <Canvas frameloop="demand" shadows camera={{ position: [0, -0, 10], fov: 45 }}
+    <Canvas frameloop="demand" shadows camera={{ position: [0, -0, 10], fov: 35 }}
     gl={{preserveDrawingBuffer: true}}>
 
       <Suspense fallback={<CanvasLoader />} >
