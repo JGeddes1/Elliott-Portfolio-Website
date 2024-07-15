@@ -118,20 +118,17 @@ import {
   const experiences = [
     {
       title: "React.js Developer",
-      company_name: "Starbucks",
+      company_name: "John Smail & Sons",
       icon: starbucks,
       iconBg: "#383E56",
-      date: "March 2020 - April 2021",
+      date: "November 2013 - February 2015",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Whilst studying for my A levels, I worked for two years in a well known and respected hardware/ furniture store which taught me time management skills and how to serve and deal with the public. During this employment, one of my duties was to work in a small team to carry and deliver heavy furniture around Northumberland. I built up a trustworthy reputation and was all",
       ],
     },
     {
       title: "React Native Developer",
-      company_name: "Tesla",
+      company_name: "Marlish Water",
       icon: tesla,
       iconBg: "#E6DEDD",
       date: "Jan 2021 - Feb 2022",
