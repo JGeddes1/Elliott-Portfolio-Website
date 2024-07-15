@@ -23,6 +23,7 @@ import {
     jobit,
     tripguide,
     threejs,
+    photoshop,
   } from "../assets";
   
   export const navLinks = [
@@ -43,7 +44,7 @@ import {
   const services = [
     {
       title: "Photoshop",
-      icon: web,
+      icon: photoshop,
     },
     {
       title: "Illustrator",
