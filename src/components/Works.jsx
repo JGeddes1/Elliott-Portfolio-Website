@@ -14,17 +14,19 @@ Modal.setAppElement('#root');
 
 const customStyles = {
   content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    background: '#1a1a1a', // Change this to match your design
+    top: '0',
+    left: '0',
+    right: '0',
+    bottom: '0',
+    marginRight: '0',
+    marginBottom: '0',
+    padding: '20px',
+    background: '#1a1a1a', // Adjust based on your design
     border: 'none',
-    borderRadius: '10px',
+    borderRadius: '0', // Remove border radius for full-screen effect
   },
 };
+
 
 const ProjectCard = ({
   index,
@@ -155,8 +157,8 @@ const Works = () => {
           </div>
           <div className='mt-5'>
             <h3 className='text-white font-bold text-[20px]'>Images</h3>
-            <div className='mt-4 flex flex-wrap gap-2'>
-              <img src={selectedProject.image} alt='project_image' className='w-full h-full object-cover rounded-2xl' />
+            <div className='mt-4 flex  w-full flex-wrap gap-2'>
+              <img src={selectedProject.image} alt='project_image' className='w-half h-half' />
             </div>
           </div>
           <button onClick={closeModal} className='mt-5 text-white'>Close</button>
