@@ -14,7 +14,6 @@ function App() {
         </div>
         <About />
         <Experience />
-        <TestModal />
         
         <Works />
         <Feedbacks />

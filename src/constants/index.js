@@ -27,6 +27,7 @@ import {
     illustrator,
     autocad,
     revit,
+    defaultjob,
   } from "../assets";
 
   
@@ -122,9 +123,9 @@ import {
   
   const experiences = [
     {
-      title: "React.js Developer",
+      title: "Storefront Worker",
       company_name: "John Smail & Sons",
-      icon: starbucks,
+      icon: defaultjob,
       iconBg: "#383E56",
       date: "November 2013 - February 2015",
       points: [
@@ -132,24 +133,34 @@ import {
       ],
     },
     {
-      title: "React Native Developer",
+      title: "Factory Operator",
       company_name: "Marlish Water",
-      icon: tesla,
+      icon: defaultjob,
       iconBg: "#E6DEDD",
-      date: "Jan 2021 - Feb 2022",
+      date: "June 2016 - June 2018",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "In the interim between school and university, I worked for a water bottling company, called Marlish Water Ltd, as a factory operator. I had to quickly learn and adapt to the working environment as it was such a fast paced factory. I had to work within and maintain a safe and hygienic environment. Although I did not work there long, I was involved in more advanced jobs, such as stripping down and cleaning the bottling machines and helping with delivery paperwork.",
+        "Please see a copy of a referance from previous works:",
+        " //dvqlxo2m2q99q.cloudfront.net/000_clients/1375524/file/elliott-young-reference.jpg",
       ],
     },
     {
-      title: "Web Developer",
-      company_name: "Shopify",
-      icon: shopify,
+      title: "Assistant Architect",
+      company_name: "McNicholas Architects",
+      icon: defaultjob,
       iconBg: "#383E56",
-      date: "Jan 2022 - Jan 2023",
+      date: "July 2018 - July 2019",
+      points: [
+        "My first experience of working in the architectural industry, was a part-time post during my first two years at university, in a domestic orientated company called McNicholas Architects, based in Harrogate. During this employment, I learned how to take surveys of existing client’s buildings and by using digital software, turned them into planning and building regulations packages. I learned how to approach clients in their own homes and gained a more in-depth knowledge of domestic dwelling's building regulations and procedures for alterations and extensions.",
+
+      ],
+    },
+    {
+      title: "Placement Student",
+      company_name: "Michael Dyson Associates",
+      icon: defaultjob,
+      iconBg: "#E6DEDD",
+      date: "August 2020 - December 2021",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -158,16 +169,25 @@ import {
       ],
     },
     {
-      title: "Full stack Developer",
-      company_name: "Meta",
-      icon: meta,
+      title: "Architectural Technologist",
+      company_name: "CSM+ Architects",
+      icon: defaultjob,
       iconBg: "#E6DEDD",
-      date: "Jan 2023 - Present",
+      date: "August 2020 - December 2021",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "During my time at CSM I have vastly developed my architectural software skills with REVIT, BIM & NBS Chorus. Whilst also learning how to work on larger projects within the healthcare sector.",
+
+      ],
+    },
+    {
+      title: "Architectural Technologist",
+      company_name: "North Tyneside Council",
+      icon: defaultjob,
+      iconBg: "#E6DEDD",
+      date: "January 2021 - Present",
+      points: [
+        "During my time at CSM I have vastly developed my architectural software skills with REVIT, BIM & NBS Chorus. Whilst also learning how to work on larger projects within the healthcare sector.",
+
       ],
     },
   ];
