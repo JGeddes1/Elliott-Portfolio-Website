@@ -1,15 +1,14 @@
-import React, { useState } from "react";
-import { Tilt } from "react-tilt";
-import { motion } from "framer-motion";
+import React, { useState } from 'react';
+import { Tilt } from 'react-tilt';
+import { motion } from 'framer-motion';
 import Modal from 'react-modal';
 
-import { styles } from "../styles";
-import { github } from "../assets";
-import { SectionWrapper } from "../hoc";
-import { projects } from "../constants";
-import { fadeIn, textVariant } from "../utils/motion";
+import { styles } from '../styles';
+import { github } from '../assets';
+import { SectionWrapper } from '../hoc';
+import { projects } from '../constants';
+import { fadeIn, textVariant } from '../utils/motion';
 
-// Set the app element to avoid screen readers problems
 Modal.setAppElement('#root');
 
 const customStyles = {
@@ -21,26 +20,25 @@ const customStyles = {
     marginRight: '0',
     marginBottom: '0',
     padding: '20px',
-    background: '#1a1a1a', // Adjust based on your design
+    background: '#1a1a1a',
     border: 'none',
-    borderRadius: '0', // Remove border radius for full-screen effect
+    borderRadius: '0',
   },
 };
-
 
 const ProjectCard = ({
   index,
   name,
   description,
   tags,
-  image,
+  images,
   source_code_link,
-  onClick
+  onClick,
 }) => {
   return (
-    <motion.div 
-      variants={fadeIn("up", "spring", index * 0.5, 0.75)} 
-      onClick={onClick}  // Add onClick here
+    <motion.div
+      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
+      onClick={onClick}
     >
       <Tilt
         options={{
@@ -52,7 +50,7 @@ const ProjectCard = ({
       >
         <div className='relative w-full h-[230px]'>
           <img
-            src={image}
+            src={images[0]} // Use the first image as the preview
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
           />
@@ -61,7 +59,7 @@ const ProjectCard = ({
             <div
               onClick={(e) => {
                 e.stopPropagation();
-                window.open(source_code_link, "_blank");
+                window.open(source_code_link, '_blank');
               }}
               className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
             >
@@ -81,10 +79,7 @@ const ProjectCard = ({
 
         <div className='mt-4 flex flex-wrap gap-2'>
           {tags.map((tag) => (
-            <p
-              key={`${name}-${tag.name}`}
-              className={`text-[14px] ${tag.color}`}
-            >
+            <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
               #{tag.name}
             </p>
           ))}
@@ -97,15 +92,30 @@ const ProjectCard = ({
 const Works = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const openModal = (project) => {
     setSelectedProject(project);
+    setCurrentImageIndex(0);
     setModalIsOpen(true);
   };
 
   const closeModal = () => {
     setModalIsOpen(false);
     setSelectedProject(null);
+    setCurrentImageIndex(0);
+  };
+
+  const showNextImage = () => {
+    if (selectedProject && currentImageIndex < selectedProject.images.length - 1) {
+      setCurrentImageIndex(currentImageIndex + 1);
+    }
+  };
+
+  const showPreviousImage = () => {
+    if (selectedProject && currentImageIndex > 0) {
+      setCurrentImageIndex(currentImageIndex - 1);
+    }
   };
 
   return (
@@ -117,24 +127,20 @@ const Works = () => {
 
       <div className='w-full flex'>
         <motion.p
-          variants={fadeIn("", "", 0.1, 1)}
+          variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
-          Following projects showcases my skills and experience through
-          real-world examples of my work. Each project is briefly described with
-          links to code repositories and live demos in it. It reflects my
-          ability to solve complex problems, work with different technologies,
-          and manage projects effectively.
+          Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
         </motion.p>
       </div>
 
       <div className='mt-20 flex flex-wrap gap-7'>
         {projects.map((project, index) => (
-          <ProjectCard 
-            key={`project-${index}`} 
-            index={index} 
-            {...project} 
-            onClick={() => openModal(project)} 
+          <ProjectCard
+            key={`project-${index}`}
+            index={index}
+            {...project}
+            onClick={() => openModal(project)}
           />
         ))}
       </div>
@@ -144,28 +150,39 @@ const Works = () => {
           isOpen={modalIsOpen}
           onRequestClose={closeModal}
           style={customStyles}
-          contentLabel="Project Details"
+          contentLabel='Project Details'
         >
-          <h2 className='text-white font-bold text-[24px]'>{selectedProject.name}</h2>
-          <p className='mt-2 text-secondary text-[14px]'>{selectedProject.description}</p>
-          <div className='mt-4 flex flex-wrap gap-2'>
-            {selectedProject.tags.map((tag) => (
-              <p key={`${selectedProject.name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
-                #{tag.name}
-              </p>
-            ))}
-          </div>
-          <div className='mt-5'>
-            <h3 className='text-white font-bold text-[20px]'>Images</h3>
-            <div className='mt-4 flex  w-full flex-wrap gap-2'>
-              <img src={selectedProject.image} alt='project_image' className='w-half h-half' />
+          <button onClick={closeModal} className='absolute top-0 right-0 m-4 text-white'>
+            Close
+          </button>
+          <div className='p-10 flex flex-col items-center'>
+            <h2 className='text-white font-bold text-[24px]'>{selectedProject.name}</h2>
+            <p className='mt-2 text-secondary text-[14px]'>{selectedProject.description}</p>
+            <div className='mt-4 flex flex-wrap gap-2'>
+              {selectedProject.tags.map((tag) => (
+                <p key={`${selectedProject.name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
+                  #{tag.name}
+                </p>
+              ))}
+            </div>
+            <div className='mt-5 w-full flex justify-center items-center'>
+              <button onClick={showPreviousImage} disabled={currentImageIndex === 0} className='text-white mx-2'>
+                &lt;
+              </button>
+              <img
+                src={selectedProject.images[currentImageIndex]}
+                alt='project_image'
+                className='w-full max-w-[600px] h-auto object-cover rounded-2xl'
+              />
+              <button onClick={showNextImage} disabled={currentImageIndex === selectedProject.images.length - 1} className='text-white mx-2'>
+                &gt;
+              </button>
             </div>
           </div>
-          <button onClick={closeModal} className='mt-5 text-white'>Close</button>
         </Modal>
       )}
     </>
   );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, '');
