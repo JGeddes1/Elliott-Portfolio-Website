@@ -7,7 +7,10 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 import logoEliott from "./logo.jpg";
-import photoshop from "./tech/photoshop.png"
+import photoshop from "./tech/photoshop.png";
+import revit from "./tech/revit.png";
+import illustrator from "./tech/illustrator.png";
+import autocad from "./tech/autocad.png";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
@@ -62,4 +65,7 @@ export {
   jobit,
   tripguide,
   photoshop,
+  revit,
+  autocad,
+  illustrator,
 };

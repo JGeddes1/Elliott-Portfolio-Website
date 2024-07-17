@@ -24,6 +24,9 @@ import {
     tripguide,
     threejs,
     photoshop,
+    illustrator,
+    autocad,
+    revit,
   } from "../assets";
 
   
@@ -50,15 +53,15 @@ import {
     },
     {
       title: "Illustrator",
-      icon: mobile,
+      icon: illustrator,
     },
     {
       title: "AutoCad",
-      icon: backend,
+      icon: autocad,
     },
     {
       title: "Revit",
-      icon: creator,
+      icon: revit,
     },
   ];
   

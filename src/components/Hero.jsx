@@ -14,14 +14,14 @@ const Hero = () => {
             Hi, I'm <span className='text-[#6D9886]'>Eliott Young</span>
           </h1>
           <p className={`${styles.heroSubText} text-black-100 mt-2`}>
-            Architectural Technologist 
+            Architectural Technologist
           </p>
         </div>
       </div>
 
       <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-20'>
         <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-[#6D9886] border-secondary flex justify-center items-start p-2 '>
+          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-[#393E46] border-secondary flex justify-center items-start p-2 '>
             <motion.div
               animate={{
                 y: [0, 24, 0],
