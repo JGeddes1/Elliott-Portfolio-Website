@@ -21,6 +21,8 @@ const Computers = () => {
       <pointLight intensity={10} position={[-0,-1,2.5]}/>
       <spotLight position={[-30,50,10]} angle={0.15} penumbra={1} intensity={10000000}
       castShadow shadow-mapSize={1024} />
+      <spotLight position={[30,-50,-10]} angle={-0.15} penumbra={1} intensity={10000000}
+      castShadow shadow-mapSize={1024} />
 
       <primitive object={computer.scene}
       scale={1}

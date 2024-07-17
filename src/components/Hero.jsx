@@ -1,34 +1,43 @@
-import React from 'react'
-import {motion} from 'framer-motion';
-import '../style.css';
+import React from 'react';
+import { motion } from 'framer-motion';
 import { styles } from '../styles';
-import {ComputersCanvas} from './canvas';
+import { ComputersCanvas } from './canvas';
+import '../style.css'; // Ensure this path is correct
 
 const Hero = () => {
   return (
     <section className='relative w-full h-screen mx-auto'>
-      <div className={` absolute inset-0   mx-auto flex flex-row items-start gap-5`}>
-      <div className="container">
       <ComputersCanvas />
-      <div className="overlay">
-        <h1 className={`${styles.heroHeadText}`}>Hello, I'm Elliott</h1>
-        <p className={`${styles.heroSubText}`}> I am an architect for sda and build pretty things</p>
+      <div className='absolute inset-0 flex items-center justify-center p-5 z-10'>
+        <div className='text-center'>
+          <h1 className={`${styles.heroHeadText} text-black`}>
+            Hi, I'm <span className='text-[#915eff]'>Eliott Young</span>
+          </h1>
+          <p className={`${styles.heroSubText} text-black-100 mt-2`}>
+            I work on architecture projects <br className='sm:block hidden' /> and build pretty houses
+          </p>
+        </div>
       </div>
-      </div>
-      </div>
-        
 
-      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center'>
+      <div className='absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center z-20'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.dev>
-
-            </motion.dev>
+            <motion.div
+              animate={{
+                y: [0, 24, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: 'loop',
+              }}
+              className='w-3 h-3 rounded-full bg-[#915eff] mb-1'
+            />
           </div>
         </a>
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
