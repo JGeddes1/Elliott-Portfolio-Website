@@ -203,25 +203,34 @@ import {
   const testimonials = [
     {
       testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
+        "CIAT- Outstanding Graduating Student Award",
+      name: "2020",
+
       company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
+
     },
     {
       testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
+        "The Stephen George & Partners Prize for Best Final Year Project",
+      name: "2020",
+
       company: "DEF Corp",
       image: "https://randomuser.me/api/portraits/men/5.jpg",
     },
     {
       testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
+        "The Hays Construction & Property Prize for the Best Architectural Detailing Portfolio on BSc (Hons) Architectural Technology",
+      name: "2020",
+      
+      company: "456 Enterprises",
+      image: "https://randomuser.me/api/portraits/women/6.jpg",
+    },
+
+    {
+      testimonial:
+        "Building Performance and Retrofit - Highly Commended",
+      name: "2020",
+      designation: "following my virtual SEEDS 2020 presentation on 'developing lamella and airey properties ecologically' I was awarded the following award.",
       company: "456 Enterprises",
       image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
@@ -233,9 +242,14 @@ import {
       description: "b;largs",
       tags: [{ name: "CSM Architects", color: "text-blue-500" }, { name: "2022", color: "text-green-500" }],
       images: [
-        "src/assets/works/project1_img1.jpg",
-        "src/assets/backend.png",
-        "src/assets/web.png"
+        "src/assets/works/Genesis_Cancer/project1_img1.jpg",
+        "src/assets/works/Genesis_Cancer/project1_img2.jpg",
+        "src/assets/works/Genesis_Cancer/project1_img3.jpg",
+        "src/assets/works/Genesis_Cancer/project1_img4.jpg",
+        "src/assets/works/Genesis_Cancer/project1_img5.jpg",
+        "src/assets/works/Genesis_Cancer/project1_img6.jpg",
+        "src/assets/works/Genesis_Cancer/project1_img7.jpg",
+        "src/assets/works/Genesis_Cancer/project1_img8.jpg",
       ],
       
       

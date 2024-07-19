@@ -152,18 +152,22 @@ const Works = () => {
                 </p>
               ))}
             </div>
+            
             <div className='mt-5 w-full flex justify-center items-center'>
-              <button onClick={showPreviousImage} disabled={currentImageIndex === 0} className='text-white mx-2'>
+            <motion.div whileTap={{ scale: 0.8 }} className="flex justify-center mt-4">
+              <button onClick={showPreviousImage} disabled={currentImageIndex === 0} className='text-white arrow-button mx-2'>
                 &lt;
               </button>
+              </motion.div>
               <img
                 src={selectedProject.images[currentImageIndex]}
                 alt='project_image'
-                className='w-full h-auto object-cover rounded-2xl'
+                className=' h-auto object-cover max-h-[1200px] rounded-2xl'
               />
-              <button onClick={showNextImage} disabled={currentImageIndex === selectedProject.images.length - 1} className='text-white mx-2'>
+              <motion.div whileTap={{ scale: 0.8 }} className="flex justify-center mt-4">
+              <button onClick={showNextImage} disabled={currentImageIndex === selectedProject.images.length - 1} className='text-white arrow-button mx-2'>
                 &gt;
-              </button>
+              </button></motion.div>
             </div>
           </div>
         </Modal>

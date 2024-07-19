@@ -30,3 +30,24 @@
   font-size: 1.5em;
   margin: 0;
 }
+
+
+.arrow-button {
+  background-color: #232631;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: background-color 0.3s ease;
+}
+
+.arrow-button:hover {
+  background-color: #383e56;
+}
