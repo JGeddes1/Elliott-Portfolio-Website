@@ -229,9 +229,35 @@ import {
   
   const projects = [
     {
-      name: "Project 1",
-      description: "This is a description for project 1",
-      tags: [{ name: "React", color: "text-blue-500" }, { name: "CSS", color: "text-green-500" }],
+      name: "Genisis Cancer Care Centre",
+      description: "b;largs",
+      tags: [{ name: "CSM Architects", color: "text-blue-500" }, { name: "2022", color: "text-green-500" }],
+      images: [
+        "src/assets/works/project1_img1.jpg",
+        "src/assets/backend.png",
+        "src/assets/web.png"
+      ],
+      
+      
+    },
+
+    {
+      name: "Derriford",
+      description: "Lorem",
+      tags: [{ name: "CSM Architects", color: "text-blue-500" }, { name: "2022", color: "text-green-500" }],
+      images: [
+        "src/assets/works/project1_img1.jpg",
+        "src/assets/backend.png",
+        "src/assets/web.png"
+      ],
+      
+      
+    },
+
+    {
+      name: "45 The Grove",
+      description: "asd to find out more",
+      tags: [{ name: "Hoot Architecture", color: "text-red-500" }, { name: "2020", color: "text-green-500" }],
       images: [
         "src/assets/works/project1_img1.jpg",
         "src/assets/backend.png",

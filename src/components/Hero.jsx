@@ -11,7 +11,7 @@ const Hero = () => {
       <div className='absolute inset-0 flex items-center justify-center p-5 z-10'>
         <div className='text-center'>
           <h1 className={`${styles.heroHeadText} text-black`}>
-            Hi, I'm <span className='text-[#6D9886]'>Eliott Young</span>
+            Hi, I'm <span className='text-[#6D9886]'>Elliott Young</span>
           </h1>
           <p className={`${styles.heroSubText} text-black-100 mt-2`}>
             Architectural Technologist
