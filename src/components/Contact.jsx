@@ -125,9 +125,9 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className='p-9  xl:flex-1 xl:h-auto md:h-[550px] sm:h-[450px] border-[#393E46] justify-center items-center'
       >
-        <EarthCanvas />
+        <EarthCanvas src="src/assets/Elliott.jpg" alt="Description of the image" />
       </motion.div>
     </div>
   );
