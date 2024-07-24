@@ -1,49 +1,54 @@
 import { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Points, PointMaterial, Preload, useGLTF } from "@react-three/drei";
-import * as random from "maath/random/dist/maath-random.esm";
+import { Box, Preload } from "@react-three/drei";
 
-const Stars = (props) => {
+const GridCubes = (props) => {
   const ref = useRef();
-  const artchitecture = useGLTF('./city-scape/scene2.gltf');
-  const [sphere] = useState(() => random.inSphere(new Float32Array(5000), { radius: 1.2 }));
+  const numCubesX = 10;
+  const numCubesZ = 10;
+  const spacing = 1.5;
+  const cubes = [];
+
+  for (let x = 0; x < numCubesX; x++) {
+    for (let z = 0; z < numCubesZ; z++) {
+      cubes.push([x * spacing, 0, z * spacing]);
+    }
+  }
 
   useFrame((state, delta) => {
-    
-    ref.current.rotation.y -= delta /15;
-    
+    const time = state.clock.getElapsedTime();
+    ref.current.children.forEach((cube, index) => {
+      const x = index % numCubesX;
+      const z = Math.floor(index / numCubesX);
+      const height = Math.sin((x + time) * 0.5) + Math.cos((z + time) * 0.5);
+      cube.position.y = height;
+    });
   });
 
   return (
-    <mesh ref={ref}>
-    <hemisphereLight intensity={3.15} groundColor="black" />
-    <pointLight intensity={10} position={[-0,-1,2.5]}/>
-    <spotLight position={[-30,50,10]} angle={0.15} penumbra={1} intensity={10000000}
-    castShadow shadow-mapSize={1024} />
-    <spotLight position={[30,-50,-10]} angle={-0.15} penumbra={1} intensity={10000000}
-    castShadow shadow-mapSize={1024} />
-
-    <primitive object={artchitecture.scene}
-    scale={1}
-    rotation={[0, 0, 0]}
-    position={[-1, -13, -3]}
-    />
-  </mesh>
+    <group ref={ref} {...props}>
+      {cubes.map((position, index) => (
+        <Box key={index} position={position} args={[1, 1, 1]}>
+          <meshStandardMaterial color='#FBD46D' />
+        </Box>
+      ))}
+    </group>
   );
 };
 
-const StarsCanvas = () => {
+const GridCubesCanvas = () => {
   return (
     <div className='w-full h-auto absolute inset-0 z-[-1]'>
-      <Canvas camera={{ position: [0, 0, 12]  }}>
+      <Canvas camera={{ position: [10, 10, 10], fov: 50 }}>
+        <ambientLight intensity={1.5} />
+        <pointLight position={[10, 10, 10]} />
         <Suspense fallback={null}>
-          <Stars />
+          <GridCubes />
         </Suspense>
-
         <Preload all />
       </Canvas>
     </div>
   );
 };
 
-export default StarsCanvas;
+export default GridCubesCanvas;
