@@ -1,4 +1,4 @@
-import { EarthCanvas, BallCanvas, ComputersCanvas, GridCubes } from './canvas';
+import { Circle_Image, BallCanvas, ComputersCanvas, GridCubes } from './canvas';
 import Hero from './Hero';
 import Navbar from './Navbar';
 import About from './About';
@@ -20,7 +20,7 @@ export {
   Works,
   Awards,
   Contact,
-  EarthCanvas, 
+  Circle_Image, 
   BallCanvas, 
   ComputersCanvas, 
   GridCubes,

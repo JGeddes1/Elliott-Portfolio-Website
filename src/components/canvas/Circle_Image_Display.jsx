@@ -1,4 +1,4 @@
-const EarthCanvas = ({ src, alt }) => {
+const Circle_Image = ({ src, alt }) => {
   return (
     <div className="circle-container ">
       <img src={src} alt={alt} className="circle-image " />
@@ -6,4 +6,4 @@ const EarthCanvas = ({ src, alt }) => {
   );
 };
 
-export default EarthCanvas;
+export default Circle_Image;

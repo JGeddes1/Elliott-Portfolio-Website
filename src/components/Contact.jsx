@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 
 import { styles } from "../styles";
-import { EarthCanvas } from "./canvas";
+import { Circle_Image } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
@@ -129,7 +129,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className='p-9  xl:flex-1 xl:h-auto md:h-[550px] sm:h-[450px] border-[#393E46] justify-center items-center'
       >
-        <EarthCanvas src="src/assets/Elliott.jpg" alt="Description of the image" />
+        <Circle_Image src="src/assets/Elliott.jpg" alt="Description of the image" />
       </motion.div>
     </div>
   );
