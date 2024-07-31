@@ -77,8 +77,8 @@
 }
 
 .circle-image {
-  width: 450px; /* Adjust the size as needed */
-  height: 450px; /* Adjust the size as needed */
+  width: 550px; /* Adjust the size as needed */
+  height: 550px; /* Adjust the size as needed */
   border-radius: 50%;
   object-fit: cover;
   border: 12px solid #151030; /* Optional: Add a border around the image */

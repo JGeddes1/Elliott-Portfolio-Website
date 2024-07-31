@@ -247,17 +247,16 @@ import {
   const projects = [
     {
       name: "Genisis Cancer Care Centre",
-      description: "b;largs",
+      description: "",
       tags: [{ name: "CSM Architects", color: "text-blue-500" }, { name: "2022", color: "text-green-500" }],
       images: [
-        "src/assets/works/Genesis_Cancer/project1_img1.jpg",
-        "src/assets/works/Genesis_Cancer/project1_img2.jpg",
-        "src/assets/works/Genesis_Cancer/project1_img3.jpg",
-        "src/assets/works/Genesis_Cancer/project1_img4.jpg",
-        "src/assets/works/Genesis_Cancer/project1_img5.jpg",
-        "src/assets/works/Genesis_Cancer/project1_img6.jpg",
-        "src/assets/works/Genesis_Cancer/project1_img7.jpg",
-        "src/assets/works/Genesis_Cancer/project1_img8.jpg",
+        "src/assets/works/CSM/Genesis/h800-1375524o9ovYPz4.jpg",
+        "src/assets/works/CSM/Genesis/w400-1375524aAWuH81F.jpg",
+        "src/assets/works/CSM/Genesis/w400-1375524ap9vittP.jpg",
+        "src/assets/works/CSM/Genesis/w400-1375524CUFoOfF2.jpg",
+        "src/assets/works/CSM/Genesis/w400-1375524EhO6Zn1R.jpg",
+
+
       ],
       
       
@@ -265,8 +264,20 @@ import {
 
     {
       name: "Derriford",
-      description: "Lorem",
+      description: "",
       tags: [{ name: "CSM Architects", color: "text-blue-500" }, { name: "2022", color: "text-green-500" }],
+      images: [
+        "src/assets/works/CSM/Derriford/w400-1375524b5CS8pfT.jpg",
+       
+      ],
+      
+      
+    },
+
+    {
+      name: "45 The Grove",
+      description: "",
+      tags: [{ name: "Hoot Architecture", color: "text-red-500" }, { name: "2020", color: "text-green-500" }],
       images: [
         "src/assets/works/project1_img1.jpg",
         "src/assets/backend.png",
@@ -275,13 +286,48 @@ import {
       
       
     },
-
     {
-      name: "45 The Grove",
-      description: "asd to find out more",
+      name: "Gateway North East",
+      description: "",
       tags: [{ name: "Hoot Architecture", color: "text-red-500" }, { name: "2020", color: "text-green-500" }],
       images: [
         "src/assets/works/project1_img1.jpg",
+        "src/assets/backend.png",
+        "src/assets/web.png"
+      ],
+      
+      
+    },
+    {
+      name: "Nursey",
+      description: "",
+      tags: [{ name: "Hoot Architecture", color: "text-red-500" }, { name: "2020", color: "text-green-500" }],
+      images: [
+        "src/assets/works/project1_img1.jpg",
+        "src/assets/backend.png",
+        "src/assets/web.png"
+      ],
+      
+      
+    },
+    {
+      name: "Leonards Drive",
+      description: "",
+      tags: [{ name: "Mcnicholas Architects", color: "text-yellow-500" }, { name: "2020", color: "text-green-500" }],
+      images: [
+        "src/assets/works/Mcnicholas Architects/w400-1375524cj8lAWel.jpg",
+        "src/assets/backend.png",
+        "src/assets/web.png"
+      ],
+      
+      
+    },
+    {
+      name: "MDA Placement Work",
+      description: "",
+      tags: [{ name: "MDA", color: "text-yellow-500" }, { name: "2020", color: "text-green-500" }],
+      images: [
+        "src/assets/works/Mcnicholas Architects/w400-1375524cj8lAWel.jpg",
         "src/assets/backend.png",
         "src/assets/web.png"
       ],
