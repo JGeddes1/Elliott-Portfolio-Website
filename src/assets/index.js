@@ -8,6 +8,7 @@ import photoshop from "./tech/photoshop.png";
 import revit from "./tech/revit.png";
 import illustrator from "./tech/illustrator.png";
 import autocad from "./tech/autocad.png";
+import Eliott from "./Elliott.jpg";
 
 
 
@@ -26,4 +27,6 @@ export {
   autocad,
   illustrator,
   defaultjob,
+  Eliott,
+  Projects
 };

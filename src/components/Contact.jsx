@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
-
+import { Eliott } from "../assets";
 import { styles } from "../styles";
 import { Circle_Image } from "./canvas";
 import { SectionWrapper } from "../hoc";
@@ -129,7 +129,7 @@ const Contact = () => {
         variants={slideIn("right", "tween", 0.2, 1)}
         className='p-9  xl:flex-1 xl:h-auto md:h-[550px] sm:h-[450px] border-[#393E46] justify-center items-center'
       >
-        <Circle_Image src="../src/assets/Elliott.jpg" alt="Description of the image" />
+        <Circle_Image src={Eliott} alt="Description of the image" />
       </motion.div>
     </div>
   );

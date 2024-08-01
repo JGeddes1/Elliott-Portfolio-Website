@@ -173,11 +173,11 @@ import {
       description: "",
       tags: [{ name: "CSM Architects", color: "text-blue-500" }, { name: "2022", color: "text-green-500" }],
       images: [
-        "src/assets/works/CSM/Genesis/h800-1375524o9ovYPz4.jpg",
-        "src/assets/works/CSM/Genesis/w400-1375524aAWuH81F.jpg",
-        "src/assets/works/CSM/Genesis/w400-1375524ap9vittP.jpg",
-        "src/assets/works/CSM/Genesis/w400-1375524CUFoOfF2.jpg",
-        "src/assets/works/CSM/Genesis/w400-1375524EhO6Zn1R.jpg",
+        "assets/works/CSM/Genesis/h800-1375524o9ovYPz4.jpg",
+        "assets/works/CSM/Genesis/w400-1375524aAWuH81F.jpg",
+        "assets/works/CSM/Genesis/w400-1375524ap9vittP.jpg",
+        "assets/works/CSM/Genesis/w400-1375524CUFoOfF2.jpg",
+        "assets/works/CSM/Genesis/w400-1375524EhO6Zn1R.jpg",
 
 
       ],
@@ -190,7 +190,7 @@ import {
       description: "",
       tags: [{ name: "CSM Architects", color: "text-blue-500" }, { name: "2022", color: "text-green-500" }],
       images: [
-        "src/assets/works/CSM/Derriford/w400-1375524b5CS8pfT.jpg",
+        "assets/works/CSM/Derriford/w400-1375524b5CS8pfT.jpg",
        
       ],
       
@@ -202,9 +202,8 @@ import {
       description: "",
       tags: [{ name: "Hoot Architecture", color: "text-red-500" }, { name: "2020", color: "text-green-500" }],
       images: [
-        "src/assets/works/project1_img1.jpg",
-        "src/assets/backend.png",
-        "src/assets/web.png"
+        "assets/works/project1_img1.jpg",
+
       ],
       
       
@@ -250,7 +249,7 @@ import {
       description: "",
       tags: [{ name: "MDA", color: "text-yellow-500" }, { name: "2020", color: "text-green-500" }],
       images: [
-        "src/assets/works/Mcnicholas Architects/w400-1375524cj8lAWel.jpg",
+        "assets/works/Mcnicholas Architects/w400-1375524cj8lAWel.jpg",
         "src/assets/backend.png",
         "src/assets/web.png"
       ],
