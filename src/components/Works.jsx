@@ -4,7 +4,6 @@ import { motion } from 'framer-motion';
 import Modal from 'react-modal';
 
 import { styles } from '../styles';
-import { github } from '../assets';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
 import { fadeIn, textVariant } from '../utils/motion';

@@ -1,6 +1,6 @@
 import { BrowserRouter } from "react-router-dom";
-import {About, Contact, Experience, Awards, Hero, Navbar, Tech, Works, GridCubes } from './components';
-import {TestModal} from './components';
+import {About, Contact, Experience, Awards, Hero, Navbar, Works, GridCubes } from './components';
+
 
 
 function App() {
