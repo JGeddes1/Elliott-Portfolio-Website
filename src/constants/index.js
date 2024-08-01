@@ -5,7 +5,7 @@ import {
     autocad,
     revit,
     defaultjob,
-  } from "../assets";
+  } from "c:/Node-Projects/Portfolio_Project/src/assets/index";
 
   
   
