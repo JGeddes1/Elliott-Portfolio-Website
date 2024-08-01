@@ -29,7 +29,7 @@ const GridCubes = (props) => {
     <group ref={ref} {...props}>
       {cubes.map((position, index) => (
         <Box key={index} position={position} args={[1, 1, 1]}>
-          <meshStandardMaterial color='#FBD46D' />
+          <meshStandardMaterial color='#FBB04B' />
         </Box>
       ))}
     </group>

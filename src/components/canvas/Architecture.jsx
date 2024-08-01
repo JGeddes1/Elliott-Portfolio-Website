@@ -4,7 +4,7 @@ import { OrbitControls, Preload, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Computers = () => {
+const Architecture = () => {
   const computer = useGLTF('./city-scape/scene.gltf');
   const computerRef = useRef();
 
@@ -33,7 +33,7 @@ const Computers = () => {
   );
 }
 
-const ComputersCanvas = () => {
+const ArchitectureCanvas = () => {
   return (
     <Canvas frameloop="always" shadows camera={{ position: [0, -0, 10], fov: 35 }}
     gl={{preserveDrawingBuffer: true}}>
@@ -46,11 +46,11 @@ const ComputersCanvas = () => {
           // minAzimuthAngle={-Math.PI / 4} 
           // maxAzimuthAngle={Math.PI / 4}
         />
-        <Computers/>
+        <Architecture/>
       </Suspense>
       <Preload all/>
     </Canvas>
   )
 }
 
-export default ComputersCanvas;
+export default ArchitectureCanvas;
