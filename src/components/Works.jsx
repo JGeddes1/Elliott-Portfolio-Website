@@ -6,7 +6,7 @@ import Modal from 'react-modal';
 import { styles } from '../styles';
 import { SectionWrapper } from '../hoc';
 import { projects } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
+import { fadeIn, textVariant } from '../utils/motion'
 
 Modal.setAppElement('#root');
 
@@ -35,9 +35,9 @@ const ProjectCard = ({
   onClick,
 }) => {
   return (
-    <motion.div
-      variants={fadeIn('up', 'spring', index * 0.5, 0.75)}
-      onClick={onClick}
+    <div
+      onClick={onClick} // Attach the onClick event to this container
+      className='cursor-pointer' // Add cursor pointer to indicate clickable area
     >
       <Tilt
         options={{
@@ -53,9 +53,6 @@ const ProjectCard = ({
             alt='project_image'
             className='w-full h-full object-cover rounded-2xl'
           />
-
-         
-          
         </div>
 
         <div className='mt-5'>
@@ -71,9 +68,10 @@ const ProjectCard = ({
           ))}
         </div>
       </Tilt>
-    </motion.div>
+    </div>
   );
 };
+
 
 const Works = () => {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -81,11 +79,12 @@ const Works = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const openModal = (project) => {
+    console.log("Project clicked:", project); // Log to ensure the click is registered
     setSelectedProject(project);
     setCurrentImageIndex(0);
     setModalIsOpen(true);
   };
-
+  
   const closeModal = () => {
     setModalIsOpen(false);
     setSelectedProject(null);
@@ -106,18 +105,18 @@ const Works = () => {
 
   return (
     <>
-      <motion.div variants={textVariant()}>
+      <div variants={textVariant()}>
         <p className={`${styles.sectionSubText} `}>My work</p>
         <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
-      </motion.div>
+      </div>
 
       <div className='w-full flex'>
-        <motion.p
+        <p
           variants={fadeIn('', '', 0.1, 1)}
           className='mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]'
         >
           Following projects showcases my skills and experience through real-world examples of my work. Each project is briefly described with links to code repositories and live demos in it. It reflects my ability to solve complex problems, work with different technologies, and manage projects effectively.
-        </motion.p>
+        </p>
       </div>
 
       <div className='mt-20 flex flex-wrap gap-7'>

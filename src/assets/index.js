@@ -28,5 +28,5 @@ export {
   illustrator,
   defaultjob,
   Eliott,
-  Projects
+  
 };
